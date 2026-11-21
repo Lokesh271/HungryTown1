@@ -1,0 +1,191 @@
+/* Reset small browser defaults */
+* {
+    box-sizing: border-box;
+}
+
+/* Whole page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #2b2420;
+}
+
+/* Top header */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #e6d8ca;
+}
+
+.topbar p {
+    margin: 0;
+    color: #756b62;
+}
+
+/* Logo */
+.brand {
+    color: #2b2420;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #ef6432;
+}
+
+/* Main content area */
+.page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+/* Intro text */
+.intro {
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #c94f25;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.intro-copy {
+    color: #756b62;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Two-column customer/owner layout */
+.workspace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+/* Both white cards */
+.card,
+.owner-area {
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #e6d8ca;
+    border-radius: 16px;
+}
+
+/* Customer form */
+.section-heading {
+    margin-bottom: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 16px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfc4b9;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+.submit-button {
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ef6432;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ca4d22;
+}
+
+/* Owner side */
+.owner-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6d8ca;
+}
+
+.count {
+    padding: 7px 10px;
+    border-radius: 20px;
+    background-color: #fff0e8;
+    color: #c94f25;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.review-list {
+    padding-top: 20px;
+}
+
+.empty-state {
+    margin-top: 30px;
+    color: #756b62;
+    text-align: center;
+}
+
+/* Mobile phone layout */
+@media (max-width: 750px) {
+    .topbar {
+        padding: 18px 24px;
+    }
+
+    .topbar p {
+        display: none;
+    }
+
+    .page {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+}

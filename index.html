@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HungryTown | Reviews</title>
+
+    <!-- This connects index.html to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <!-- Top area -->
+    <header class="topbar">
+        <a class="brand" href="#">
+            Hungry<span>Town</span>
+        </a>
+
+        <p>Restaurant review desk</p>
+    </header>
+
+    <main class="page">
+
+        <!-- Introduction -->
+        <section class="intro">
+            <p class="eyebrow">VERSION 1 · REVIEW COLLECTION</p>
+
+            <h1>Turn every order into a better next meal.</h1>
+
+            <p class="intro-copy">
+                Customers can leave feedback below.
+                The restaurant owner sees each review as a ticket.
+            </p>
+        </section>
+
+        <div class="workspace">
+
+            <!-- Customer form -->
+            <section class="card form-card">
+                <div class="section-heading">
+                    <p class="eyebrow">CUSTOMER VIEW</p>
+                    <h2>Leave a review</h2>
+                </div>
+
+                <form id="review-form">
+
+                    <label for="order-number">Order number</label>
+                    <input
+                        id="order-number"
+                        type="text"
+                        placeholder="Example: #1042"
+                        required
+                    >
+
+                    <label for="rating">Your rating</label>
+                    <input
+                        id="rating"
+                        type="number"
+                        min="1"
+                        max="5"
+                        placeholder="1 - 5"
+                        required
+                    >
+
+                    <label for="review-text">What happened?</label>
+                    <textarea
+                        id="review-text"
+                        rows="5"
+                        placeholder="Tell us about your food, delivery, or service..."
+                        required
+                    ></textarea>
+
+                    <button class="submit-button" type="submit">
+                        Send review
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- Restaurant owner section -->
+            <section class="owner-area">
+                <div class="owner-heading">
+                    <div>
+                        <p class="eyebrow">OWNER VIEW</p>
+                        <h2>Incoming reviews</h2>
+                    </div>
+
+                    <span class="count">0 reviews</span>
+                </div>
+
+                <div class="review-list">
+                    <p class="empty-state">
+                        No reviews yet. Submit the first one using the form.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
